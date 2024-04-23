@@ -1,12 +1,14 @@
 # Build Docker Image
-`docker pull ubuntu:22.04`
+Pull base docker image: `docker pull ubuntu:22.04`
 
-`docker build -f Dockerfile -t <image-name> --no-cache --force-rm .`
+Build docker image: `docker build -f Dockerfile -t <image-name> --no-cache --force-rm .`
 
 # Run Docker Container
 `docker run --rm -it <image-name> /bin/bash`
 
 # Other Commands
-`docker images`
+List available docker images: `docker images`
 
-`docker image rm <image-name>`
+List docker containers: `docker ps`
+
+Remove docker image: `docker image rm <image-name>`
